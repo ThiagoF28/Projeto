@@ -1,11 +1,21 @@
-@import url('https://fonts.googleapis.com/css2?family=Convergence&family=Pacifico&display=swap');
-body{
-    color: rgb(0, 0, 0);
-    font-family: sans-serif;
-    box-sizing: border-box;
-    background-color: black;
+:root{
+    --pattern: #E1DAC9;
+    --bg-1: #71b78e;
+    --bg-2: #C5E2D1;
+    --font-color-1: #000;
+
+    --font-title: 'Cabin Sketch', cursive;
+    --font-body: 'Laila', sans-serif;
 }
-#sec1{
+*{
+    font-family: var(--font-body);
+    box-sizing: border-box;
+}
+.content{
+    color: var(--font-color-1);
+    background: var(--pattern);
+}
+#section1{
     width: 100%;
     display: flex;
     justify-content: center;
@@ -28,11 +38,11 @@ body{
     align-items: center;
     flex-wrap: wrap;
     flex-direction: column;
-    color: #E1DAC9;
-    /* z-inrgb(255, 255, 255)*/
+    color: var(--pattern);
 }
 .form h1{
-    font-size: 26px;
+    font-size: 56px;
+    font-family: var(--font-title);
     font-weight: 700;
 }
 .form p{
@@ -51,17 +61,17 @@ form button{
     border-radius: 10px;
     width: 250px;
     height: 35px;
-    background: #E1DAC9;
-    color: black;
-    border: 2px solid #000;
+    background: var(--pattern);
+    color: var(--font-color-1);
+    border: 2px solid var(--font-color-1);
     font-weight: 700;
 }
 form input{
     border-radius: 10px;
     width: 250px;
     height: 35px;
-    background: #E1DAC9;
-    border: 2px solid #000;
+    background: #e1dac9c5;
+    border: 2px solid var(--font-color-1);
 }
 #sec1-links{
     width: 100%;
@@ -70,7 +80,13 @@ form input{
     margin-top: -50px;
 }
 #sec1-links a{
-    color: #E1DAC9;
+    color: var(--pattern);
     font-weight: 700;
     text-decoration: none;
+}
+#section2, #section4, #section6{
+    background: var(--bg-2);
+}
+#section3, #section5{
+    background: var(--bg-1);
 }
