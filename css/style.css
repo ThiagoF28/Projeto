@@ -88,16 +88,34 @@ form input{
     background: var(--bg-2);
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: auto;
     width: 100%;
 }
 #section3, #section5{
     background: var(--bg-1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
 }
-#nincos{
-   border-radius: 100px;
-    width: 100px;
-    height: 100px;
-    height: 100px;
+.row h6{
+    margin-top: 1rem;
+    font-size: small;
+
+}
+#nicons{
+    border-radius: 100px;
+    height: 250;
+    width: 250;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+.somosnos{
+display: flex;
+flex-direction: column;
+height: 270px;
+width: 270px;
 }
