@@ -86,7 +86,17 @@ form input{
 }
 #section2, #section4, #section6{
     background: var(--bg-2);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: auto;
+    width: 100%;
 }
 #section3, #section5{
     background: var(--bg-1);
+}
+#nincos{
+   border-radius: 100px;
+    width: 100px;
+    height: 100px;
 }
