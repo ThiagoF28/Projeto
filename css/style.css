@@ -10,16 +10,19 @@
 *{
     font-family: var(--font-body);
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 .content{
     color: var(--font-color-1);
     background: var(--pattern);
 }
-#section1{
+#home{
     width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 550px;
 }
 #bg{
     object-fit: cover;
@@ -73,42 +76,41 @@ form input{
     background: #e1dac9c5;
     border: 2px solid var(--font-color-1);
 }
-#sec1-links{
+#home-links{
     width: 100%;
     display: flex;
     justify-content: space-around;
     margin-top: -50px;
 }
-#sec1-links a{
+#home-links a{
     color: var(--pattern);
     font-weight: 700;
     text-decoration: none;
 }
-#section2, #section4, #section6{
+#servicos, #section4, #section6{
     background: var(--bg-2);
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    height: auto;
+    justify-content: space-around;
+    height: 550px;
     width: 100%;
+    margin: 0;
+    padding: 80px;
 }
 #section3, #section5{
     background: var(--bg-1);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: auto;
+    height: 550px;
     width: 100%;
 }
-.row h6{
-    margin-top: 1rem;
-    font-size: small;
-
+#servicos div{
+    font-size: 14px;
 }
-#nicons{
+#icon-servico{
     border-radius: 100px;
-    height: 250;
-    width: 250;
+    height: 80px;
+    width: 80px;
     display: flex;
     justify-content: space-around;
     margin-top: 1rem;
