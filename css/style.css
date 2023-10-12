@@ -338,6 +338,26 @@
     .tag-servico{
         gap: 10px;
     }
+    #quem-somos, #como-funciona{
+        flex-wrap: wrap;
+    }
+    .quem-somos-img img{
+        width: 350px;
+    }
+    #como-funciona{
+        flex-direction: column-reverse;
+    }
+    .como-funciona-video iframe{
+        width: 350px;
+    }
+    .form-contact form input, .form-contact form textarea, .form-contact form button{
+        width: 350px;
+    }
+    #rodape{
+        height: 80px;
+        text-align: center;
+        justify-content: space-around;
+    }
     
 }
  
