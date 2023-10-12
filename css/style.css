@@ -1,7 +1,7 @@
 :root{
     --pattern: #E1DAC9;
-    --bg-1: #71b78e;
-    --bg-2: #C5E2D1;
+    --bg-1: #C5E2D1;
+    --bg-2: #71b78e;
     --font-color-1: #000;
 
     --font-title: 'Cabin Sketch', cursive;
@@ -13,16 +13,22 @@
     padding: 0;
     margin: 0;
 }
-.content{
-    color: var(--font-color-1);
-    background: var(--pattern);
+.section-content-bg1{
+    background-color: var(--bg-1);
+}
+.section-content-bg2{
+    background-color: var(--bg-2);
+}
+.section{
+    display: flex;
+    height: 550px;
+    width: 100%;
 }
 #home{
     width: 100%;
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    height: 550px;
+    background-color: var(--bg-1);
 }
 #bg{
     object-fit: cover;
@@ -51,7 +57,7 @@
 .form p{
     font-weight: 600;
 }
-form{
+.form form{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,21 +66,27 @@ form{
     margin-top: 30px;
     font-weight: 700;
 }
-form button{
-    border-radius: 10px;
+.form form button{
+    border-radius: 5px;
     width: 250px;
     height: 35px;
-    background: var(--pattern);
-    color: var(--font-color-1);
-    border: 2px solid var(--font-color-1);
-    font-weight: 700;
+    background: var(--bg-2);
+    color: var(--bg-1);
+    border: 1px solid var(--bg-1);
+    font-weight: 600;
 }
-form input{
-    border-radius: 10px;
+.form form button:hover{
+    background-color: var(--bg-1);
+    color: var(--bg-2);
+    border: 1px solid var(--bg-2);
+}
+.form form input{
+    border-radius: 2px;
     width: 250px;
     height: 35px;
-    background: #e1dac9c5;
-    border: 2px solid var(--font-color-1);
+    background: #c5e2d1cc;
+    border: 1px solid var(--bg-2);
+    padding: 5px 10px;
 }
 #home-links{
     width: 100%;
@@ -87,37 +99,195 @@ form input{
     font-weight: 700;
     text-decoration: none;
 }
-#servicos, #section4, #section6{
-    background: var(--bg-2);
-    display: flex;
-    justify-content: space-around;
-    height: 550px;
+#servicos{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    margin: 0;
-    padding: 80px;
 }
-#section3, #section5{
+.servicos-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}    
+#servicos h1{
+    text-align: center;
+    color: var(--pattern);
+    font-size: 48px;
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.tag-servico{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    gap: 30px;
+    padding: 1rem;
+}
+.tag-servico span{
+    width: 20rem;
+}
+.icon-servico{
+    height: 50px;
+    width: 50px;
+    display: flex;
+}
+#quem-somos{
+    display: flex;
+    width: 100%;
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.quem-somos-text h1{
+    text-align: center;
+    color: var(--font-color-1);
+    font-size: 48px;
+    font-family: var(--font-title);
+    font-weight: 700;   
+}
+.quem-somos-text{
+    text-align: center;
+}
+.quem-somos-img img{
+    width: 400px;
+}
+#como-funciona{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+.como-funciona-text{
+    text-align: center;
+}
+.como-funciona-text h1{
+    color: var(--pattern);
+    font-size: 48px;
+    font-family: var(--font-title);
+    font-weight: 700;   
+}
+#depoimentos{
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#depoimentos h1{
+    color: var(--font-color-1);
+    font-size: 48px;
+    font-family: var(--font-title);
+    font-weight: 700;  
+}
+#depo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.card-depoimento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+.depoimento-img img{
+    width: 100px;
+    border-radius: 50%;
+    border: 8px solid var(--bg-2);
+}
+.depoimento-text{
+    text-align: center;
+}
+.name-depoimento{
+    font-weight: 700;
+}
+.depoimento-text span{
+    display: block;
+}
+.depoimento-img svg{
+    color: var(--bg-2);
+    border: 8px solid var(--bg-2);
+    border-radius: 50%;
+}
+.card-depoimento:nth-child(3) .depoimento-text{
+    font-weight: 700;
+    color: var(--bg-2);
+}
+.card-depoimento:nth-child(3):hover{
+    cursor: pointer;
+}
+#contato{
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+.form-contato h1{
+    color: var(--font-color-1);
+    font-size: 48px;
+    font-family: var(--font-title);
+    font-weight: 700;
+}
+.form-contato p{
+    font-weight: 600;
+}
+.form-contact form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    gap: 10px;
+}
+.form-contact form input{
+    border-radius: 5px;
+    width: 310px;
+    height: 35px;
     background: var(--bg-1);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 550px;
+    border: 1px solid var(--font-color-1);
+    padding: 5px 10px;
+}
+.form-contact form textarea{
+    border: 1px solid var(--font-color-1);
+    border-radius: 5px;
+    background: var(--bg-1);
+    width: 630px;
+    padding: 5px 10px;
+    resize: none;
+}
+.form-contact form button{
+    border-radius: 5px;
+    width: 630px;
+    height: 35px;
+    background: var(--bg-1);
+    color: var(--font-color-1);
+    border: 1px solid var(--font-color-1);
+    font-weight: 600;
+}
+.form-contact form button:hover{
+    background-color: var(--bg-1);
+    color: var(--bg-2);
+    border: 1px solid var(--font-color-1);
+}
+#rodape{
+    height: 60px;
     width: 100%;
-}
-#servicos div{
-    font-size: 14px;
-}
-#icon-servico{
-    border-radius: 100px;
-    height: 80px;
-    width: 80px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 1rem;
+    align-items: center;
+    justify-content: space-between;
 }
-.somosnos{
-display: flex;
-flex-direction: column;
-height: 270px;
-width: 270px;
+.footer-bg img{
+    width: 40px;
+    cursor: pointer;
+}
+.footer-copyright a{
+    color: var(--bg-2);
+    text-decoration: none;
 }
