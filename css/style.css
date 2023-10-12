@@ -41,6 +41,9 @@
     height: 130px;
     object-fit: cover;
 }
+#logo img{
+    cursor: pointer;
+}
 .form{
     margin-top: -360px;
     display: flex;
